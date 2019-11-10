@@ -6,3 +6,6 @@
 /Chat/Chat/obj
 /Chat/Chat/bin/Debug/netcoreapp3.0
 /Chat/.vs/Chat
+/Chat/UserService/bin/Debug/netcoreapp3.0
+/Chat/UserService/obj
+/Chat/Chat.Db/bin/Debug/netcoreapp3.0

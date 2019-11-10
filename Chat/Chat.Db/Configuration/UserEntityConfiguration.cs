@@ -13,6 +13,10 @@ namespace Chat.Db.Configuration
                .HasKey(x => x.Id);
 
             builder
+                .Property(x => x.Role)
+                .IsRequired();
+
+            builder
                 .HasOne(x => x.Profile)
                 .WithOne(x => x.User);
 
