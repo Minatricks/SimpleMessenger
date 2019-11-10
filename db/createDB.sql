@@ -1,0 +1,54 @@
+USE master;
+IF DB_ID('ChatDb') IS NOT NULL
+	DROP DATABASE ChatDb
+CREATE DATABASE ChatDb
+GO
+
+USE ChatDB
+
+CREATE TABLE Users
+(
+	Id INT,
+	Username NVARCHAR(MAX),
+	Password NVARCHAR(MAX),
+	Role NVARCHAR(MAX),
+	Token NVARCHAR(MAX)
+
+	CONSTRAINT PK_User_Id PRIMARY KEY (Id)
+)
+
+CREATE TABLE UsersProfile
+(
+	Id INT,
+	Name NVARCHAR(MAX),
+	Surname  NVARCHAR(MAX),
+	ImageUrl NVARCHAR(MAX),
+	AboutUrl NVARCHAR(MAX),
+	Country NVARCHAR(MAX),
+	City NVARCHAR(MAX),
+	
+	CONSTRAINT PK_UsersProfile_Id PRIMARY KEY (Id),
+	CONSTRAINT FK_UserProfile_To_Users FOREIGN KEY (Id) REFERENCES Users(Id),
+)
+
+CREATE TABLE Contacts
+(
+	Id INT,
+	UserId INT,
+
+	CONSTRAINT PK_Contacts_Id PRIMARY KEY (Id),
+	CONSTRAINT FK_Contacts_To_User FOREIGN KEY (UserId) REFERENCES Users(Id),
+)
+
+CREATE TABLE Messages
+(
+	Id UNIQUEIDENTIFIER DEFAULT NEWID(),
+	TextMessage NVARCHAR(MAX) NOT NULL,
+	DateAndTime SMALLDATETIME NOT NULL,
+	IdSender INT NOT NULL,
+	IdRecipient INT NOT NULL,
+
+	CONSTRAINT PK_Messages_Id PRIMARY KEY (Id),
+	CONSTRAINT FK_Messages_To_Senders FOREIGN KEY (IdSender) REFERENCES Users(Id),
+	CONSTRAINT FK_Messages_To_Recipients FOREIGN KEY (IdRecipient) REFERENCES Users(Id),
+)
