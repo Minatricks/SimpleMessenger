@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Chat/Chat.Db/obj
+/Chat/Chat/obj
+/Chat/Chat/bin/Debug/netcoreapp3.0
+/Chat/.vs/Chat

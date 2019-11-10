@@ -1,0 +1,24 @@
+﻿using Chat.Db.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace Chat.Db.Configuration
+{
+    public class UserEntityConfiguration : IEntityTypeConfiguration<Users>
+    {
+        public void Configure(EntityTypeBuilder<Users> builder)
+        {
+            builder
+               .ToTable("Users", "dbo")
+               .HasKey(x => x.Id);
+
+            builder
+                .HasOne(x => x.Profile)
+                .WithOne(x => x.User);
+
+            builder
+                .HasMany(x => x.Contacts)
+                .WithOne(x => x.User);
+        }
+    }
+}
