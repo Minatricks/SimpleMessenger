@@ -5,18 +5,11 @@ using System.Threading.Tasks;
 
 namespace Chat.Message
 {
-    public class MessageHub : Hub
+    public class MessageHub : Hub, IMessageHub
     {
-        private readonly IMessageService _messageService;
-
-        public MessageHub(IMessageService messageService)
+        public async Task Notify(MessageResponse message)
         {
-            _messageService = messageService;
-        }
-
-        public async Task NotifyThatMessageSended(MessageResponse message)
-        {
-            await Clients.All.SendAsync("ReciveMessage", message);
+            await Clients.All.SendAsync("notify", message);
         }
     }
 }

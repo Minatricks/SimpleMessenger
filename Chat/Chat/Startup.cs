@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Chat.User;
+using Chat.Message;
 
 namespace Chat
 {
@@ -20,8 +21,10 @@ namespace Chat
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSignalR();
             services.AddCors();
             services.AddChatDb(Configuration);
+            services.AddMessageService();
             services.AddUserService();
             services.AddAuthenticationService(Configuration);
             services.AddControllers();
@@ -35,11 +38,15 @@ namespace Chat
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(x => x
-                .AllowAnyOrigin()
-                .AllowAnyMethod()
-                .AllowAnyHeader());
+            app.UseCors(builder =>
+            {
+                builder.WithOrigins("http://localhost:4200")
+                    .AllowAnyHeader()
+                    .WithMethods("GET", "POST")
+                    .AllowCredentials();
+            });
 
+            app.AddMessageHub();
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
