@@ -10,7 +10,7 @@ namespace Chat.User
 {
     public static class Bootstrap
     {
-        public static IServiceCollection AddUserAndAuthenticationService(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddAuthenticationService(this IServiceCollection services, IConfiguration configuration)
         {
             var key = Encoding.ASCII.GetBytes(
                 configuration.GetSection("AppSettings")
@@ -35,10 +35,14 @@ namespace Chat.User
                 };
             });
 
-            services.AddScoped<IUserService, UserService>();
             services.AddScoped<IAuthenticationService, AuthenticationService>();
 
             return services;
+        }
+
+        public static IServiceCollection AddUserService(this IServiceCollection services)
+        {
+            return services.AddScoped<IUserService, UserService>();
         }
     }
 }

@@ -22,7 +22,8 @@ namespace Chat
         {
             services.AddCors();
             services.AddChatDb(Configuration);
-            services.AddUserAndAuthenticationService(Configuration);
+            services.AddUserService();
+            services.AddAuthenticationService(Configuration);
             services.AddControllers();
         }
 
