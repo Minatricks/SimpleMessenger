@@ -24,10 +24,10 @@ namespace Chat.Message
             return await _chatDbContext.SaveChangesAsync();
         }
 
-        public async Task<List<MessageResponse>> GetMessages(int recepientId)
+        public async Task<List<MessageResponse>> GetMessages(int recipientId)
         {
             return await _chatDbContext.Messages
-                .Where(x => x.IdRecipient == recepientId)
+                .Where(x => x.IdRecipient == recipientId)
                 .Select(x => x.ToMessageResponse())
                 .ToListAsync();
         }

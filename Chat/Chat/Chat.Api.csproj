@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Chat.Db\Chat.Db.csproj" />
+    <ProjectReference Include="..\Chat.Exceptions\Chat.Exceptions.csproj" />
     <ProjectReference Include="..\Chat.Message\Chat.Message.csproj" />
     <ProjectReference Include="..\UserService\Chat.User.csproj" />
   </ItemGroup>

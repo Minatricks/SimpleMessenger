@@ -36,8 +36,8 @@ namespace Chat.Api.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(AuthenticateModel model)
         {
-            var isOk = await _userService.RegisterUser(model.Username, model.Password);
-            return Ok(Convert.ToBoolean(isOk));
+            await _userService.RegisterUser(model.Username, model.Password);
+            return Authentication(model);
         }
 
         [HttpGet]
