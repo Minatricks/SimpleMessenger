@@ -1,0 +1,8 @@
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Exceptions\bin\Debug\netcoreapp3.0\Chat.Exceptions.deps.json
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Exceptions\bin\Debug\netcoreapp3.0\Chat.Exceptions.dll
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Exceptions\bin\Debug\netcoreapp3.0\Chat.Exceptions.pdb
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Exceptions\obj\Debug\netcoreapp3.0\Chat.Exceptions.csprojAssemblyReference.cache
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Exceptions\obj\Debug\netcoreapp3.0\Chat.Exceptions.AssemblyInfoInputs.cache
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Exceptions\obj\Debug\netcoreapp3.0\Chat.Exceptions.AssemblyInfo.cs
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Exceptions\obj\Debug\netcoreapp3.0\Chat.Exceptions.dll
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Exceptions\obj\Debug\netcoreapp3.0\Chat.Exceptions.pdb

@@ -18,13 +18,13 @@ namespace Chat.Message
             _chatDbContext = dbContext;
         }
 
-        public async Task<int> SendMessage(MessageResponse message)
+        public async Task<int> SendMessage(MessageDto message)
         {
             _chatDbContext.Messages.Add(message.ToMessage());
             return await _chatDbContext.SaveChangesAsync();
         }
 
-        public async Task<List<MessageResponse>> GetMessages(int recipientId)
+        public async Task<List<MessageDto>> GetMessages(int recipientId)
         {
             return await _chatDbContext.Messages
                 .Where(x => x.IdRecipient == recipientId)

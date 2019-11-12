@@ -5,7 +5,7 @@ namespace Chat.Message.Mapping
 {
     public static class MessageEntityMapper
     {
-        public static Messages ToMessage(this MessageResponse entity)
+        public static Messages ToMessage(this MessageDto entity)
         {
             return new Messages()
             {

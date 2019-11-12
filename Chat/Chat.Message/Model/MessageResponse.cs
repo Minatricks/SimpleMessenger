@@ -1,6 +1,6 @@
 ﻿namespace Chat.Message.Model
 {
-   public class MessageResponse
+   public class MessageDto
     {
         public string Id { get; set; }
 

@@ -6,8 +6,8 @@ namespace Chat.Message.Interfaces
 {
     public interface IMessageService
     {
-        Task<int> SendMessage(MessageResponse message);
+        Task<int> SendMessage(MessageDto message);
 
-        Task<List<MessageResponse>> GetMessages(int recepientId);
+        Task<List<MessageDto>> GetMessages(int recepientId);
     }
 }

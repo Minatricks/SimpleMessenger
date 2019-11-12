@@ -21,12 +21,7 @@ export class MessageComponent implements OnInit {
   }
 
   public sendMessage() {
-    this.currentMessage.TextMessage = this.message;
-    this.currentMessage.IdSender = 1;
-    this.currentMessage.DateTime = new Date(2012, 12, 10);
-    this.hubConnection
-      .invoke('notify', this.currentMessage)
-      .catch(err => alert(err));
+    
   }
 
   private configureHubConnection() {
