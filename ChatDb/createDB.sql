@@ -23,7 +23,7 @@ CREATE TABLE UsersProfile
 	Name NVARCHAR(MAX),
 	Surname  NVARCHAR(MAX),
 	ImageUrl NVARCHAR(MAX),
-	AboutUrl NVARCHAR(MAX),
+	About NVARCHAR(MAX),
 	Country NVARCHAR(MAX),
 	City NVARCHAR(MAX),
 	

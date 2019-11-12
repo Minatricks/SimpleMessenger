@@ -16,9 +16,6 @@
 
         public string City { get; set; }
 
-
-        public int UserId { get; set; }
-        
         public Users User { get; set; }
     }
 }
