@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Chat.Api.Models;
 using Chat.User.Interfaces;
@@ -28,6 +30,14 @@ namespace Chat.Api.Controllers
             var user = _userService.Get(model.Username, model.Password);
             user.Token = _authenticationService.GenerateToken(user);
             return Ok(user); 
+        }
+
+        [AllowAnonymous]
+        [HttpPost("register")]
+        public async Task<IActionResult> Register(AuthenticateModel model)
+        {
+            var isOk = await _userService.RegisterUser(model.Username, model.Password);
+            return Ok(Convert.ToBoolean(isOk));
         }
 
         [HttpGet]

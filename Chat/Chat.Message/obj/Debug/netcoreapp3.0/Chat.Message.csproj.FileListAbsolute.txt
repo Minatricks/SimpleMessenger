@@ -9,3 +9,14 @@ C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Message\bin\D
 C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Message\bin\Debug\netcoreapp3.0\Chat.Message.pdb
 C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Message\obj\Debug\netcoreapp3.0\Chat.Message.dll
 C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Message\obj\Debug\netcoreapp3.0\Chat.Message.pdb
+C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Message\bin\Debug\netcoreapp3.0\Chat.Message.deps.json
+C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Message\bin\Debug\netcoreapp3.0\Chat.Message.dll
+C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Message\bin\Debug\netcoreapp3.0\Chat.Message.pdb
+C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Message\bin\Debug\netcoreapp3.0\Chat.Db.dll
+C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Message\bin\Debug\netcoreapp3.0\Chat.Db.pdb
+C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Message\obj\Debug\netcoreapp3.0\Chat.Message.csprojAssemblyReference.cache
+C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Message\obj\Debug\netcoreapp3.0\Chat.Message.AssemblyInfoInputs.cache
+C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Message\obj\Debug\netcoreapp3.0\Chat.Message.AssemblyInfo.cs
+C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Message\obj\Debug\netcoreapp3.0\Chat.Message.csproj.CopyComplete
+C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Message\obj\Debug\netcoreapp3.0\Chat.Message.dll
+C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Message\obj\Debug\netcoreapp3.0\Chat.Message.pdb
