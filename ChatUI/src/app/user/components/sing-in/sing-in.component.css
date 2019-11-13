@@ -2,6 +2,7 @@
   width: 100vw;
   height: 100vh;
   background: #00A779;
+  z-index: 1;
 }
 
 .top-left-row {
@@ -9,6 +10,7 @@
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 1;
 
   bottom: 50%;
   right: 75%;
@@ -19,6 +21,7 @@
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 1;
 
   bottom: 50%;
   left: 75%;
@@ -29,6 +32,7 @@
   position: fixed;
   right: 0;
   bottom: 0;
+  z-index: 1;
 
   top: 50%;
   left: 75%;
@@ -39,7 +43,75 @@
   position: fixed;
   left: 0;
   bottom: 0;
+  z-index: 1;
 
   top: 50%;
   right: 75%;
+}
+
+.center-card {
+  position: fixed;
+  width: 50vw;
+  left: 50%;
+  top: 50%;
+  padding: 2%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-btn {
+  position: fixed;
+  top: -25%;
+  right: 5%;
+
+  width: 8vw;
+  height: 6vh;
+
+  font-size: 14px;
+  background: #00A779;
+  color: whitesmoke;
+  border: 1px solid #A63400;
+}
+
+.login-btn:hover {
+  color: white;
+  border: 1px solid #A63400;
+  font-size: 16px;
+  transition: 0.25s;
+}
+
+.login-btn[disabled] {
+  background: rgb(197, 197, 197);
+}
+
+input.ng-untouched.ng-invalid {
+  border: solid 1px rgb(212, 212, 212);
+}
+
+input.ng-untouched.ng-valid {
+  border: solid 1px rgb(212, 212, 212);
+  ;
+}
+
+input.ng-touched.ng-invalid {
+  border: solid red 1px;
+}
+
+input.ng-touched.ng-valid {
+  border: solid green 1px;
+}
+
+.brand {
+  z-index: 2;
+  margin: 10%;
+}
+
+.brand-name {
+  color: #006D4F;
+  text-shadow: rgb(253, 241, 241) 2px 2px 5px;
 }

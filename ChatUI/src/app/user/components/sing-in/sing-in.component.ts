@@ -12,4 +12,7 @@ export class SingInComponent implements OnInit {
   ngOnInit() {
   }
 
+  registrate(userName: string, password: string) {
+    alert(userName + password);
+  }
 }
