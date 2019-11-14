@@ -3,53 +3,49 @@
     height: 100vh;
     background: #00A779;
     z-index: 1;
-  }
-  
-  .top-left-row {
+}
+
+.top-left-row {
     background: #35D3A7;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 1;
-  
     bottom: 50%;
     right: 75%;
-  }
-  
-  .top-right-row {
+}
+
+.top-right-row {
     background: #1F7D63;
     position: fixed;
     right: 0;
     top: 0;
     z-index: 1;
-  
     bottom: 50%;
     left: 75%;
-  }
-  
-  .bottom-right-row {
+}
+
+.bottom-right-row {
     background: #006D4F;
     position: fixed;
     right: 0;
     bottom: 0;
     z-index: 1;
-  
     top: 50%;
     left: 75%;
-  }
-  
-  .bottom-left-row {
+}
+
+.bottom-left-row {
     background: #5FD3B3;
     position: fixed;
     left: 0;
     bottom: 0;
     z-index: 1;
-  
     top: 50%;
     right: 75%;
-  }
-  
-  .center-card {
+}
+
+.center-card {
     position: fixed;
     width: 50vw;
     left: 50%;
@@ -57,62 +53,63 @@
     padding: 2%;
     transform: translate(-50%, -50%);
     z-index: 2;
-  }
-  
-  .flex-form {
+}
+
+.flex-form {
     display: flex;
     flex-direction: column;
-  }
-  
-  .login-btn {
+}
+
+.login-btn {
     position: fixed;
     top: -25%;
     right: 5%;
-  
     width: 8vw;
     height: 6vh;
-  
     font-size: 14px;
     background: #00A779;
     color: whitesmoke;
     border: 1px solid #A63400;
-  }
-  
-  .login-btn:hover {
+}
+
+.login-btn:hover {
     color: white;
     border: 1px solid #A63400;
     font-size: 16px;
     transition: 0.25s;
-  }
-  
-  .login-btn[disabled] {
+}
+
+.login-btn[disabled] {
     background: rgb(197, 197, 197);
-  }
-  
-  input.ng-untouched.ng-invalid {
+}
+
+input.ng-untouched.ng-invalid {
     border: solid 1px rgb(212, 212, 212);
-  }
-  
-  input.ng-untouched.ng-valid {
+}
+
+input.ng-untouched.ng-valid {
     border: solid 1px rgb(212, 212, 212);
     ;
-  }
-  
-  input.ng-touched.ng-invalid {
+}
+
+input.ng-touched.ng-invalid {
     border: solid red 1px;
-  }
-  
-  input.ng-touched.ng-valid {
+}
+
+input.ng-touched.ng-valid {
     border: solid green 1px;
-  }
-  
-  .brand {
+}
+
+.brand {
     z-index: 2;
     margin: 10%;
-  }
-  
-  .brand-name {
+}
+
+.brand-name {
     color: #006D4F;
     text-shadow: rgb(253, 241, 241) 2px 2px 5px;
-  }
-  
+}
+
+.red-text {
+    color: rgb(131, 9, 9);
+}
