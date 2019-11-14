@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sing-in',
@@ -7,12 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingInComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { 
+    
+  }
+
 
   ngOnInit() {
   }
 
   registrate(userName: string, password: string) {
     alert(userName + password);
+  }
+
+  signUp() {
+    this.router.navigate(['/sign-up']);
   }
 }

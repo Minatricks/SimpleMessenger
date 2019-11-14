@@ -1,12 +1,28 @@
 <div class="container">
-  <h2>Hello {{nick}}!</h2>
-  <form (ngSubmit)="sendMessage()" #chatForm="ngForm">
-    <div>
-      <label for="message">Message</label>
-      <input type="text" id="message" name="message" [(ngModel)]="message" required>
+  <form #messageForm="ngForm" (ngSubmit)="sendMessage()">
+
+    <div class="input-group">
+
+      <div class="input-group-prepend">
+        <input [hidden]="true" type="file" id="file-input">
+        <label for="file-input">
+          <h4>
+            <i class="fas fa-paperclip"></i>
+          </h4>
+        </label>
+      </div>
+
+      <input type="text" class="form-control" placeholder="Enter your message" name="message" #message ngModel
+        required autocomplete="off">
+
+      <div class="input-group-append">
+        <button [disabled]="!loginForm.valid" class="form-control btn btn-outline-success" type="submit">
+          <div>Sign in
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </button>
+      </div>
+
     </div>
-    <button type="submit" id="sendmessage" [disabled]="!chatForm.valid">
-      Send
-    </button>
   </form>
 </div>

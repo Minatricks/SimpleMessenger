@@ -29,7 +29,7 @@ export class MessageComponent implements OnInit {
       .start()
       .then(() => console.log('Connection started!'))
       .catch(error => {
-        alert('Error while establishing connection');
+        //alert('Error while establishing connection');
         console.log(error);
       });
   }
