@@ -20,10 +20,6 @@ export class MessageComponent implements OnInit {
     this.subscribeOnEvent('notify', this.alertMessage);
   }
 
-  public sendMessage() {
-    
-  }
-
   private configureHubConnection() {
     this.hubConnection = new HubConnectionBuilder().withUrl(this.connectionUrl).build();
   }

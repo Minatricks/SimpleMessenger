@@ -7,6 +7,4 @@ import { Message } from '../models/message';
 })
 export class MessageService {
 
-  
-
 }
