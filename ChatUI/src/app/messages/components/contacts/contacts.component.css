@@ -1,0 +1,10 @@
+.contacts-container{
+    width: 25vw;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+    background: #006D4F;
+}
