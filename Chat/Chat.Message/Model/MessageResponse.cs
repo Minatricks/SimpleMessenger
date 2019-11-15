@@ -1,4 +1,6 @@
-﻿namespace Chat.Message.Model
+﻿using System;
+
+namespace Chat.Message.Model
 {
    public class MessageDto
     {
@@ -6,7 +8,7 @@
 
         public string TextMessage { get; set; }
 
-        public string DateTime { get; set; }
+        public DateTime DateTime { get; set; }
 
         public int IdSender { get; set; }
 

@@ -12,7 +12,7 @@ namespace Chat.Db
             services
                 .AddDbContextPool<IChatDbContext, ChatDbContext>(option =>
                 {
-                    var connectionString = configuration.GetConnectionString("ChatDb");
+                    var connectionString = configuration.GetConnectionString("ChatDbLocal");
 
                     if (string.IsNullOrEmpty(connectionString))
                     {

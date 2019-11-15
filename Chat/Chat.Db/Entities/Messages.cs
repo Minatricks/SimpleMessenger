@@ -1,4 +1,6 @@
-﻿namespace Chat.Db.Entities
+﻿using System;
+
+namespace Chat.Db.Entities
 {
     public class Messages
     {
@@ -6,7 +8,7 @@
 
         public string TextMessage { get; set; }
 
-        public string DateTime { get; set; }
+        public DateTime DateAndTime { get; set; }
 
 
         public int IdSender { get; set; }

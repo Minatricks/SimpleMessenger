@@ -13,7 +13,7 @@ namespace Chat.Message.Mapping
                 TextMessage = entity.TextMessage,
                 IdRecipient = entity.IdRecipient,
                 IdSender = entity.IdSender,
-                DateTime = entity.DateTime
+                DateTime = entity.DateAndTime
             };
         }
     }

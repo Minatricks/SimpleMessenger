@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Chat.Message;
 using Chat.Message.Interfaces;
 using Chat.Message.Model;
@@ -25,6 +26,7 @@ namespace Chat.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]MessageDto message)
         {
+            message.DateTime = DateTime.Now;
             await _messageService.SendMessage(message);
             await _hubContext.Clients.All.SendAsync("notify", message);
             return Ok();

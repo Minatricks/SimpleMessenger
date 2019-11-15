@@ -9,6 +9,13 @@ namespace Chat.Db.Configuration
         public void Configure(EntityTypeBuilder<Messages> builder)
         {
             builder
+                .HasKey(x => x.Id);
+
+            builder
+                .Property(x => x.Id)
+                .ValueGeneratedOnAdd();
+                
+            builder
                 .HasOne(x => x.SenderUser)
                 .WithMany(x => x.SendMessages)
                 .HasForeignKey(x => x.IdSender)
