@@ -25,19 +25,22 @@ namespace Chat.Api.Controllers
 
         [AllowAnonymous]
         [HttpPost("auth")]
-        public IActionResult Authentication(AuthenticateModel model)
+        [Consumes("application/x-www-form-urlencoded")]
+        public async Task<IActionResult> Authentication([FromForm]AuthenticateModel model)
         {
-            var user = _userService.Get(model.Username, model.Password);
+            var user = await _userService.Get(model.Username, model.Password);
             user.Token = _authenticationService.GenerateToken(user);
-            return Ok(user); 
+            await _userService.UpdateUserToken(user.Id, user.Token);
+            return Ok(user);
         }
 
         [AllowAnonymous]
         [HttpPost("register")]
-        public async Task<IActionResult> Register(AuthenticateModel model)
+        [Consumes("application/x-www-form-urlencoded")]
+        public async Task<IActionResult> Register([FromForm]AuthenticateModel model)
         {
             await _userService.RegisterUser(model.Username, model.Password);
-            return Authentication(model);
+            return await Authentication(model);
         }
 
         [HttpGet]

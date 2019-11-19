@@ -21,11 +21,24 @@ namespace Chat.User
             _chatDbContext = dbContext;
         }
 
-        public UserResponse Get(string username, string password)
+        public async Task<UserResponse> Get(string username, string password)
         {
-            var user = _chatDbContext.Users.First(x => x.Username == username && x.Password == password);
+            var user = await _chatDbContext.Users.FirstOrDefaultAsync(x => x.Username == username && x.Password == password);
             return user.ToUserResponse();
         }
+
+        public async Task<int> UpdateUserToken(int userId, string token)
+        {
+            var user = await _chatDbContext.Users.FirstOrDefaultAsync(x => x.Id == userId);
+            if(user == null)
+            {
+                throw new Exception("User not found");
+            }
+            user.Token = token;
+            _chatDbContext.Entry(user).State = EntityState.Modified;
+            return await _chatDbContext.SaveChangesAsync();
+        }
+
         public async Task<int> RegisterUser(string username, string password)
         {
             var searchResult = await _chatDbContext.Users.FirstOrDefaultAsync(x => x.Username == username);
@@ -33,25 +46,21 @@ namespace Chat.User
             {
                 throw new Exception("User already exist");
             }
-
-            var lastUserId = await _chatDbContext.Users.Select(x => x.Id).FirstOrDefaultAsync();
-
-            var user = new Users()
+            var user = new Db.Entities.User()
             {
                 Username = username,
                 Password = password,
                 Role = Roles.User,
-                Id = lastUserId + 1
             };
 
             var profile = new UsersProfile()
             {
-                Id = lastUserId + 1
+                User = user
             };
 
             _chatDbContext.Users.Add(user);
             _chatDbContext.Profiles.Add(profile);
-           return await _chatDbContext.SaveChangesAsync();
+            return await _chatDbContext.SaveChangesAsync();
         }
 
         public IEnumerable<UserResponse> GetAll()

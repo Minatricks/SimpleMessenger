@@ -1,7 +1,7 @@
 export class Message {
-    Id: string;
-    TextMessage: string;
-    DateTime: Date;
-    IdSender: number;
-    IdRecipient: number;
+    id: string;
+    textMessage: string;
+    dateTime: Date;
+    idSender: number;
+    idRecipient: number;
 }

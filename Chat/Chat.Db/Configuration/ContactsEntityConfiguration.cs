@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Chat.Db.Configuration
 {
-    public class ContactsEntityConfiguration : IEntityTypeConfiguration<Contacts>
+    public class ContactsEntityConfiguration : IEntityTypeConfiguration<Contact>
     {
-        public void Configure(EntityTypeBuilder<Contacts> builder)
+        public void Configure(EntityTypeBuilder<Contact> builder)
         {
             builder
                 .ToTable("Contacts", "dbo")

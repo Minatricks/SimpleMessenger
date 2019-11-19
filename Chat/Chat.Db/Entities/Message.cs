@@ -2,7 +2,7 @@
 
 namespace Chat.Db.Entities
 {
-    public class Messages
+    public class Message
     {
         public string Id { get; set; }
 
@@ -13,11 +13,11 @@ namespace Chat.Db.Entities
 
         public int IdSender { get; set; }
 
-        public Users SenderUser { get; set; }
+        public User SenderUser { get; set; }
 
 
         public int IdRecipient { get; set; }
 
-        public Users RecipientUser { get; set; }
+        public User RecipientUser { get; set; }
     }
 }

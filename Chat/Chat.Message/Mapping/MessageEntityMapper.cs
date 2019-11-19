@@ -1,13 +1,12 @@
-﻿using Chat.Db.Entities;
-using Chat.Message.Model;
+﻿using Chat.Message.Model;
 
 namespace Chat.Message.Mapping
 {
     public static class MessageEntityMapper
     {
-        public static Messages ToMessage(this MessageDto entity)
+        public static Db.Entities.Message ToMessage(this MessageDto entity)
         {
-            return new Messages()
+            return new Db.Entities.Message()
             {
                 Id = entity.Id,
                 TextMessage = entity.TextMessage,

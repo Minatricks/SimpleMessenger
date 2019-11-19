@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj": {}
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj": {
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj",
+        "projectUniqueName": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj",
         "projectName": "Chat.Exceptions",
-        "projectPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj",
-        "packagesPath": "C:\\Users\\Dmytro_Kirieiev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\obj\\",
+        "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj",
+        "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dmytro_Kirieiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"

@@ -4,11 +4,12 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Chat.Db.Configuration
 {
-    public class MessageEntityConfiguration : IEntityTypeConfiguration<Messages>
+    public class MessageEntityConfiguration : IEntityTypeConfiguration<Message>
     {
-        public void Configure(EntityTypeBuilder<Messages> builder)
+        public void Configure(EntityTypeBuilder<Message> builder)
         {
             builder
+                .ToTable("dbo","Messages")
                 .HasKey(x => x.Id);
 
             builder

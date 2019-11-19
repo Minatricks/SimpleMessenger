@@ -2,7 +2,7 @@
 
 namespace Chat.Db.Entities
 {
-    public class Users
+    public class User
     {
         public int Id { get; set; }
 
@@ -17,10 +17,10 @@ namespace Chat.Db.Entities
 
         public UsersProfile Profile { get; set; }
 
-        public ICollection<Contacts> Contacts { get; set; }
+        public ICollection<Contact> Contacts { get; set; }
 
-        public ICollection<Messages> SendMessages { get; set; }
+        public ICollection<Message> SendMessages { get; set; }
 
-        public ICollection<Messages> ReceivedMessages { get; set; }
+        public ICollection<Message> ReceivedMessages { get; set; }
     }
 }

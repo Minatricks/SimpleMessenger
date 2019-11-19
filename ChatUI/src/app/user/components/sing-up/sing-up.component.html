@@ -1,8 +1,8 @@
 <div class="card center-card">
-  <form class="flex-form" #loginForm="ngForm" (ngSubmit)="registrate(userName.value,password.value)">
+  <form class="flex-form" #loginForm="ngForm" (ngSubmit)="registrate(loginForm.value)">
 
     <label> Login
-      <input type="text" autocomplete="off" placeholder="User name" class="form-control" name="userName" #userName
+      <input type="text" autocomplete="off" placeholder="User name" class="form-control" name="username" #userName
         ngModel required pattern="[a-zA-Z_]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}">
     </label>
 

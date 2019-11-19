@@ -1,5 +1,5 @@
 <div>
-  <form #messageForm="ngForm" (ngSubmit)="sendMessage()">
+  <form #messageForm="ngForm" (ngSubmit)="sendMessage(message.value)">
 
     <div class="input-group">
 
@@ -12,11 +12,11 @@
         </label>
       </div>
 
-      <input type="text" class="form-control" placeholder="Enter your message" name="message" #message ngModel required
-        autocomplete="off">
+      <input type="text" class="form-control" placeholder="Enter your message" name="message" #message ngModel
+       required autocomplete="off">
 
       <div class="input-group-append">
-        <button [disabled]="!loginForm.valid" class="form-control btn btn-outline-success" type="submit">
+        <button [disabled]="!messageForm.valid" class="form-control btn btn-outline-success" type="submit">
           <div>Send
             <i class="far fa-paper-plane"></i>
           </div>

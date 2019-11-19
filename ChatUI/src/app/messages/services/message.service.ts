@@ -1,24 +1,32 @@
 import { Injectable } from '@angular/core';
 import { HubConnection, HubConnectionBuilder } from '@aspnet/signalr';
 import { Message } from '../models/message';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MessageService {
-  private connectionUrl = 'http://localhost:5000/messages';
+  private connectionUrlForHub = 'http://localhost:5000/messages';
+  private connectionUrlForController = 'http://localhost:5000/message';
   private hubConnection: HubConnection;
-  message = ' ';
-  currentMessage = new Message();
 
-  onGetMessage(func) {
+  constructor(private http: HttpClient) {
+
     this.configureHubConnection();
     this.startConnection();
-    this.subscribeOnEvent('notify', this.alertMessage);
+  }
+
+  onGetMessage(func): void {
+    this.subscribeOnEvent('notify', func);
+  }
+
+  sendMessage(message: Message) {
+    return this.http.post(this.connectionUrlForController, message);
   }
 
   private configureHubConnection() {
-    this.hubConnection = new HubConnectionBuilder().withUrl(this.connectionUrl).build();
+    this.hubConnection = new HubConnectionBuilder().withUrl(this.connectionUrlForHub).build();
   }
 
   private startConnection() {
@@ -26,7 +34,6 @@ export class MessageService {
       .start()
       .then(() => console.log('Connection started!'))
       .catch(error => {
-        //alert('Error while establishing connection');
         console.log(error);
       });
   }
@@ -35,7 +42,4 @@ export class MessageService {
     this.hubConnection.on(eventName, func);
   }
 
-  private alertMessage(message: Message) {
-    alert(`Sender: ${message.IdSender}, DateTime: ${message.DateTime}, Text: ${message.TextMessage}`);
-  }
 }

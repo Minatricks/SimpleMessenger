@@ -8,7 +8,7 @@ USE ChatDB
 
 CREATE TABLE Users
 (
-	Id INT,
+	Id INT IDENTITY,
 	Username NVARCHAR(MAX),
 	Password NVARCHAR(MAX),
 	Token NVARCHAR(MAX),
@@ -17,7 +17,7 @@ CREATE TABLE Users
 	CONSTRAINT PK_User_Id PRIMARY KEY (Id)
 )
 
-CREATE TABLE UsersProfile
+CREATE TABLE UserProfiles
 (
 	Id INT,
 	Name NVARCHAR(MAX),

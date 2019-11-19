@@ -9,7 +9,7 @@ namespace Chat.Db.Configuration
         public void Configure(EntityTypeBuilder<UsersProfile> builder)
         {
             builder
-                .ToTable("UsersProfile", "dbo")
+                .ToTable("UserProfiles", "dbo")
                 .HasKey(x => x.Id);
 
             builder

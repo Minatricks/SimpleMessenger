@@ -3,11 +3,11 @@ using Chat.User.Model;
 
 namespace Chat.User.Mapping
 {
-    public static class UserResponseMapper
+    public static class UserMapper
     {
-        public static UserResponse ToUserResponse(this Db.Entities.User entity)
+        public static Db.Entities.User ToUser(this UserResponse entity)
         {
-            return new UserResponse()
+            return new Db.Entities.User()
             {
                 Id = entity.Id,
                 Role = entity.Role,

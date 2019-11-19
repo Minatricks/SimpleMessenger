@@ -8,16 +8,16 @@ namespace Chat.Db
     {
         public ChatDbContext(DbContextOptions<ChatDbContext> options) : base(options)
         {
-            
+          
         }
 
-        public DbSet<Users> Users { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public DbSet<UsersProfile> Profiles { get; set; }
 
-        public DbSet<Messages> Messages { get; set; }
+        public DbSet<Message> Messages { get; set; }
 
-        public DbSet<Contacts> Contacts { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

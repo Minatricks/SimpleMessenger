@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HubConnection, HubConnectionBuilder } from '@aspnet/signalr';
 import { Message } from '../../models/message';
+import { MessageService } from '../../services/message.service';
 
 @Component({
   selector: 'app-message',
@@ -9,37 +10,27 @@ import { Message } from '../../models/message';
 })
 export class MessageComponent implements OnInit {
 
-  private connectionUrl = 'http://localhost:5000/messages';
-  private hubConnection: HubConnection;
-  message = ' ';
-  currentMessage = new Message();
+  constructor(private messageService: MessageService) {
 
-  ngOnInit() {
-    this.configureHubConnection();
-    this.startConnection();
-    this.subscribeOnEvent('notify', this.alertMessage);
   }
 
-  private configureHubConnection() {
-    this.hubConnection = new HubConnectionBuilder().withUrl(this.connectionUrl).build();
+  ngOnInit(): void {
+    this.messageService.onGetMessage(this.alertMessage);
+  }
+  sendMessage(message: string) {
+    let tempMessage = new Message();
+    tempMessage.textMessage = message;
+    tempMessage.idSender = 1;
+    tempMessage.idRecipient = 2;
+    this.messageService.sendMessage(tempMessage).subscribe(
+      (date: any) => {
+        alert(date);
+      }
+    )
+  }
+  alertMessage(message: Message) {
+    alert(message.textMessage);
   }
 
-  private startConnection() {
-    this.hubConnection
-      .start()
-      .then(() => console.log('Connection started!'))
-      .catch(error => {
-        //alert('Error while establishing connection');
-        console.log(error);
-      });
-  }
-
-  private subscribeOnEvent(eventName: string, func) {
-    this.hubConnection.on(eventName, func);
-  }
-
-  private alertMessage(message: Message) {
-    alert(`Sender: ${message.IdSender}, DateTime: ${message.DateTime}, Text: ${message.TextMessage}`);
-  }
 
 }

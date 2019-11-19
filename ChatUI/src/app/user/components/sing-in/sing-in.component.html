@@ -1,7 +1,7 @@
 <div class="card center-card">
-  <form class="flex-form" #loginForm="ngForm" (ngSubmit)="registrate(userName.value,password.value)">
+  <form class="flex-form" #loginForm="ngForm" (ngSubmit)="registrate(loginForm.value)">
     <label> Login
-      <input type="text" autocomplete="off" placeholder="User name" class="form-control" name="userName" #userName
+      <input type="text" autocomplete="off" placeholder="User name" class="form-control" name="username" #userName
         ngModel required>
     </label>
     <label for="id-password"> Password </label>
@@ -17,7 +17,6 @@
       </div>
     </button>
   </form>
-  <a (click)="signUp()">Sign up</a>
 </div>
 
 

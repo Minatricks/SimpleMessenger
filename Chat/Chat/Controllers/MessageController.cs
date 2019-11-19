@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.SignalR;
 
 namespace Chat.Api.Controllers
 {
-    [Authorize]
     [Route("message")]
     [ApiController]
     public class MessageController : ControllerBase

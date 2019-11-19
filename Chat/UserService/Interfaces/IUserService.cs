@@ -8,8 +8,10 @@ namespace Chat.User.Interfaces
     {
         Task<int> RegisterUser(string username, string password);
 
-        UserResponse Get(string username, string password);
+        Task<UserResponse> Get(string username, string password);
 
         IEnumerable<UserResponse> GetAll();
+
+        Task<int> UpdateUserToken(int userId, string token);
     }
 }

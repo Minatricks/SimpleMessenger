@@ -16,6 +16,6 @@
 
         public string City { get; set; }
 
-        public Users User { get; set; }
+        public User User { get; set; }
     }
 }
