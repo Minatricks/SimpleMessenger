@@ -1,35 +1,18 @@
-<div class="card center-card">
-  <form class="flex-form" #loginForm="ngForm" (ngSubmit)="logIn(loginForm.value)">
-    <label> Login
-      <input type="text" autocomplete="off" placeholder="User name" class="form-control" name="username" #userName
-        ngModel required>
-    </label>
-    <label for="id-password"> Password </label>
-    <input type="password" id="id-password" autocomplete="off" placeholder="Password" class="form-control"
-      name="password" #password ngModel required>
-    <small class="form-text text-muted">
-      Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special
-      characters, or emoji.
-    </small>
-    <button [disabled]="!loginForm.valid" class="login-btn" type="submit">
-      <div>Sign in
-        <i class="fas fa-arrow-right"></i>
-      </div>
-    </button>
-  </form>
-</div>
-
-
-
-<div class="back-layout">
-  <div class="top-left-row">
-    <div class="brand">
-      <h1 class="brand-name">Siger
-        <i class="fas fa-feather-alt"></i>
-      </h1>
+<form class="flex-form" #loginForm="ngForm" (ngSubmit)="logIn(loginForm.value)">
+  <label> Login
+    <input type="text" autocomplete="off" placeholder="User name" class="form-control" name="username" #userName ngModel
+      required>
+  </label>
+  <label for="id-password"> Password </label>
+  <input type="password" id="id-password" autocomplete="off" placeholder="Password" class="form-control" name="password"
+    #password ngModel required>
+  <small class="form-text text-muted">
+    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special
+    characters, or emoji.
+  </small>
+  <button [disabled]="!loginForm.valid" class="login-btn" type="submit">
+    <div>Sign in
+      <i class="fas fa-arrow-right"></i>
     </div>
-  </div>
-  <div class="top-right-row"></div>
-  <div class="bottom-left-row"></div>
-  <div class="bottom-right-row"></div>
-</div>
+  </button>
+</form>

@@ -1,48 +1,33 @@
-<div class="card center-card">
-  <form class="flex-form" #loginForm="ngForm" (ngSubmit)="registrate(loginForm.value)">
+<form class="flex-form" #loginForm="ngForm" (ngSubmit)="registrate(loginForm.value)">
 
-    <label> Login
-      <input type="text" autocomplete="off" placeholder="User name" class="form-control" name="username" #userName
-        ngModel required pattern="[a-zA-Z_]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}">
-    </label>
+  <label> Login
+    <input type="text" autocomplete="off" placeholder="User name" class="form-control" name="username" #userName ngModel
+      required pattern="[a-zA-Z_]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}">
+  </label>
 
-    <label> Password
-      <input type="password" autocomplete="off" placeholder="Password" class="form-control" name="password" #password
-        ngModel required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-    </label>
+  <label> Password
+    <input type="password" autocomplete="off" placeholder="Password" class="form-control" name="password" #password
+      ngModel required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+  </label>
 
-    <label> Repeat Password
-      <input type="password" autocomplete="off" placeholder="Password" class="form-control" name="passwordRepeat"
-        #passwordRepeat ngModel required>
-    </label>
+  <label> Repeat Password
+    <input type="password" autocomplete="off" placeholder="Password" class="form-control" name="passwordRepeat"
+      #passwordRepeat ngModel required>
+  </label>
 
-    <small [hidden]="(passwordRepeat.value == password.value)" class="form-text red-text">
-      Passwords do not match
-    </small>
-    
-    <small [hidden]="password.valid" class="form-text red-text">
-      Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special
-      characters, or emoji.
-    </small>
+  <small [hidden]="(passwordRepeat.value == password.value)" class="form-text red-text">
+    Passwords do not match
+  </small>
 
-    <button [disabled]="!loginForm.valid" class="login-btn" type="submit">
-      <div>Sign up
-        <i class="fas fa-arrow-right"></i>
-      </div>
-    </button>
+  <small [hidden]="password.valid" class="form-text red-text">
+    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special
+    characters, or emoji.
+  </small>
 
-  </form>
-</div>
-
-<div class="back-layout">
-  <div class="top-left-row">
-    <div class="brand">
-      <h1 class="brand-name">Siger
-        <i class="fas fa-feather-alt"></i>
-      </h1>
+  <button [disabled]="!loginForm.valid" class="login-btn" type="submit">
+    <div>Sign up
+      <i class="fas fa-arrow-right"></i>
     </div>
-  </div>
-  <div class="top-right-row"></div>
-  <div class="bottom-left-row"></div>
-  <div class="bottom-right-row"></div>
-</div>
+  </button>
+
+</form>

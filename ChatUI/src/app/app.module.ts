@@ -11,6 +11,7 @@ import { ContactsComponent } from './messages/components/contacts/contacts.compo
 import { ContactComponent } from './messages/components/contact/contact.component';
 import { MessageViewComponent } from './messages/components/message-view/message-view.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MenuComponent } from './user/components/menu/menu.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     ContactsComponent,
     ContactComponent,
     MessageViewComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
