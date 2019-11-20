@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chat.Db.Model\Chat.Db.Model.csproj" />
+    <ProjectReference Include="..\Chat.Db\Chat.Db.csproj" />
+    <ProjectReference Include="..\Chat.Exceptions\Chat.Exceptions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+</Project>

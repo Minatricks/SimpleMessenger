@@ -2,8 +2,8 @@
 
 namespace Chat.Exceptions
 {
-    public abstract class NoPermissionsException : Exception
+    public class NoPermissionsException : Exception
     {
-        protected NoPermissionsException(string message) : base(message) { }
+        public NoPermissionsException(string message) : base(message) { }
     }
 }

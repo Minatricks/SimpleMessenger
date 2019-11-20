@@ -23,7 +23,8 @@ namespace Chat.Db.Configuration
 
             builder
                 .HasMany(x => x.Contacts)
-                .WithOne(x => x.User);
+                .WithOne(x => x.User)
+                .HasForeignKey(x => x.UserId);
         }
     }
 }
