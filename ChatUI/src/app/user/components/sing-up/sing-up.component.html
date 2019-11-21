@@ -1,6 +1,6 @@
 <form class="flex-form" #loginForm="ngForm" (ngSubmit)="registrate(loginForm.value)">
 
-  <label> Login
+  <label> Email
     <input type="text" autocomplete="off" placeholder="User name" class="form-control" name="username" #userName ngModel
       required pattern="[a-zA-Z_]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}">
   </label>
@@ -19,12 +19,12 @@
     Passwords do not match
   </small>
 
-  <small [hidden]="password.valid" class="form-text red-text">
+  <small [hidden]="password.valid" class="form-text">
     Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special
     characters, or emoji.
   </small>
 
-  <button [disabled]="!loginForm.valid" class="login-btn" type="submit">
+  <button [disabled]="!loginForm.valid" class="login-btn base-btn" type="submit">
     <div>Sign up
       <i class="fas fa-arrow-right"></i>
     </div>

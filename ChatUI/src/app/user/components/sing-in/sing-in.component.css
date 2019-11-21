@@ -3,55 +3,21 @@
   flex-direction: column;
 }
 
-.for-hand-orientation{
-  position: absolute;
-}
-
-.help-text{
+.login-btn{
   position: fixed;
-  top: 5%;
-  right: -33%;
+  bottom: 5%;
+  right: 10%;
 }
 
-.hand-down{
-  position: fixed;
-  top: 25%;
-  right: -30%;
-}
-
-.hand-up{
-  position: fixed;
-  top: 50%;
-  right: -30%;
-}
-
-.hand-left{
-  position: fixed;
-  top: 36%;
-  right: -20%;
-}
-
-.hand-right{
-  position: fixed;
-  top: 36%;
-  right: -38%;
-}
-
-.login-btn {
-  position: fixed;
-  top: 35%;
-  right: -35%;
-}
-
-.login-btn:hover {
+.login-btn:enabled:hover {
   color: white;
-  border: 1px solid #A63400;
-  font-size: 16px;
+  border: 1px solid whitesmoke;
+  transform: scale(1.1);
   transition: 0.25s;
 }
 
-.login-btn[disabled] {
-  display: none;
+.login-btn:disabled {
+  background: gray;
 }
 
 input.ng-untouched.ng-invalid {

@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+
 import { SingUpComponent } from './sing-up.component';
 
 describe('SingUpComponent', () => {
