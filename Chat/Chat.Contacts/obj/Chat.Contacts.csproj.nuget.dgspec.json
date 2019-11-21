@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Contacts\\Chat.Contacts.csproj": {}
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Contacts\\Chat.Contacts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Contacts\\Chat.Contacts.csproj": {
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Contacts\\Chat.Contacts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Contacts\\Chat.Contacts.csproj",
+        "projectUniqueName": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Contacts\\Chat.Contacts.csproj",
         "projectName": "Chat.Contacts",
-        "projectPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Contacts\\Chat.Contacts.csproj",
-        "packagesPath": "C:\\Users\\Dmytro_Kirieiev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Contacts\\obj\\",
+        "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Contacts\\Chat.Contacts.csproj",
+        "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Contacts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dmytro_Kirieiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -30,14 +32,14 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj": {
-                "projectPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj"
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj"
               },
-              "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj": {
-                "projectPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj"
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj"
               },
-              "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj": {
-                "projectPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj"
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj"
               }
             }
           }
@@ -69,21 +71,23 @@
         }
       }
     },
-    "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj": {
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj",
         "projectName": "Chat.Db.Model",
-        "projectPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj",
-        "packagesPath": "C:\\Users\\Dmytro_Kirieiev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\obj\\",
+        "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj",
+        "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dmytro_Kirieiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -124,21 +128,23 @@
         }
       }
     },
-    "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj": {
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj",
+        "projectUniqueName": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj",
         "projectName": "Chat.Db",
-        "projectPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj",
-        "packagesPath": "C:\\Users\\Dmytro_Kirieiev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db\\obj\\",
+        "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj",
+        "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dmytro_Kirieiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -189,21 +195,23 @@
         }
       }
     },
-    "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj": {
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj",
+        "projectUniqueName": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj",
         "projectName": "Chat.Exceptions",
-        "projectPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj",
-        "packagesPath": "C:\\Users\\Dmytro_Kirieiev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\obj\\",
+        "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj",
+        "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dmytro_Kirieiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"

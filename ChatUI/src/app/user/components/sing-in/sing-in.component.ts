@@ -26,13 +26,40 @@ export class SingInComponent implements OnInit {
   }
 
   private getUser(user: UserModel) {
-    localStorage.setItem(UserRightsConstant.token, user.token);
-    localStorage.setItem(UserRightsConstant.role, user.role);
+    this.setCookie(UserRightsConstant.token, user.token, { 'max-age': 3600 });
+    this.setCookie(UserRightsConstant.role, user.role, { 'max-age': 3600 });
+    alert(this.getCookie(UserRightsConstant.role) + "-" + this.getCookie(UserRightsConstant.token));
   }
 
   private handlerError(error: HttpErrorResponse) {
     alert(error.statusText);
   }
 
+  getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return  decodeURIComponent(matches[1]);
+  }
+
+  setCookie(name: string, value: string, options): void {
+    options = { path: '/' };
+
+    let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+    for (let optionKey in options) {
+      updatedCookie += "; " + optionKey;
+      let optionValue = options[optionKey];
+      if (optionValue !== true) {
+        updatedCookie += "=" + optionValue;
+      }
+    }
+
+    document.cookie = updatedCookie;
+  }
+
+  deleteCookie(name: string): void {
+    this.setCookie(name, "", { 'max-age': -1 });
+  }
 
 }

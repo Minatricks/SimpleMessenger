@@ -11,6 +11,7 @@ export class UserService {
 
   constructor(private httpClient: HttpClient) {
   }
+
   logIn(loginModel: LoginModel) {
     const body = this.generateSecurityBody(loginModel);
     return this.httpClient
@@ -21,6 +22,10 @@ export class UserService {
     const body = this.generateSecurityBody(loginModel);
     return this.httpClient
       .post(`${this.userControllerUrl}/register`, body.toString(), { headers: this.securityHeader });
+  }
+
+  logOut() {
+
   }
 
   private generateSecurityBody(loginModel: LoginModel) {

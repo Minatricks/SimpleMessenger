@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj": {}
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj": {
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj",
         "projectName": "Chat.Db.Model",
-        "projectPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj",
-        "packagesPath": "C:\\Users\\Dmytro_Kirieiev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\obj\\",
+        "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj",
+        "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dmytro_Kirieiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
