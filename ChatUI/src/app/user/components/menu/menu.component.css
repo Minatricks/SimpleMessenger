@@ -72,3 +72,23 @@
   color: #006D4F;
   text-shadow: rgb(253, 241, 241) 2px 2px 5px;
 }
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.tab-btn{
+  width: 22vw;
+  height: 7vh;
+  font-size: 18px;
+  border: 1px solid #006D4F;
+  background: white;
+}
+
+.active-tab{
+  color: white;
+  background: #006D4F;
+  border: none;
+}

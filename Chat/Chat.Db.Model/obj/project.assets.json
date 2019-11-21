@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj",
-      "projectName": "Chat.Exceptions",
-      "projectPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj",
+      "projectUniqueName": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj",
+      "projectName": "Chat.Db.Model",
+      "projectPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj",
       "packagesPath": "C:\\Users\\Dmytro_Kirieiev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Exceptions\\obj\\",
+      "outputPath": "C:\\Users\\Dmytro_Kirieiev\\Videos\\SimpleMessanger\\Chat\\Chat.Db.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

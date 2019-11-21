@@ -1,16 +1,12 @@
 <div class="card center-card">
   <div class="card-title">
     <ul class="nav nav-pills flex-center">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
+      <button class="tab-btn" routerLink="sign-up" routerLinkActive="active-tab"> Go to sign in</button>
+      <button class="tab-btn" routerLink="sign-in" routerLinkActive="active-tab">Go to sign up</button>
     </ul>
   </div>
   <div class="card-body">
-    <app-sing-in></app-sing-in>
+    <router-outlet></router-outlet>
   </div>
 </div>
 

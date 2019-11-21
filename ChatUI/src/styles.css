@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+.base-btn {
+    width: 8vw;
+    height: 6vh;
+  
+    font-size: 14px;
+    background: #00A779;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+  }

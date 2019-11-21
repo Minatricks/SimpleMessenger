@@ -3,18 +3,44 @@
   flex-direction: column;
 }
 
+.for-hand-orientation{
+  position: absolute;
+}
+
+.help-text{
+  position: fixed;
+  top: 5%;
+  right: -33%;
+}
+
+.hand-down{
+  position: fixed;
+  top: 25%;
+  right: -30%;
+}
+
+.hand-up{
+  position: fixed;
+  top: 50%;
+  right: -30%;
+}
+
+.hand-left{
+  position: fixed;
+  top: 36%;
+  right: -20%;
+}
+
+.hand-right{
+  position: fixed;
+  top: 36%;
+  right: -38%;
+}
+
 .login-btn {
   position: fixed;
-  top: -25%;
-  right: 5%;
-
-  width: 8vw;
-  height: 6vh;
-
-  font-size: 14px;
-  background: #00A779;
-  color: whitesmoke;
-  border: 1px solid #A63400;
+  top: 35%;
+  right: -35%;
 }
 
 .login-btn:hover {
@@ -25,7 +51,7 @@
 }
 
 .login-btn[disabled] {
-  background: rgb(197, 197, 197);
+  display: none;
 }
 
 input.ng-untouched.ng-invalid {
