@@ -33,11 +33,13 @@ CREATE TABLE UserProfiles
 
 CREATE TABLE Contacts
 (
-	Id INT,
-	UserId INT,
+	RelationshipId UNIQUEIDENTIFIER DEFAULT NEWID(),
+	MyId INT,
+	ContactId INT,
 
-	CONSTRAINT PK_Contacts_Id PRIMARY KEY (Id),
-	CONSTRAINT FK_Contacts_To_User FOREIGN KEY (UserId) REFERENCES Users(Id),
+	CONSTRAINT PK_Contacts_Id PRIMARY KEY (RelationshipId),
+	CONSTRAINT FK_Contacts_To_MyUser FOREIGN KEY (MyId) REFERENCES Users(Id),
+	CONSTRAINT FK_Contacts_To_MyFriend FOREIGN KEY (ContactId) REFERENCES Users(Id),
 )
 
 CREATE TABLE Messages
@@ -52,3 +54,8 @@ CREATE TABLE Messages
 	CONSTRAINT FK_Messages_To_Senders FOREIGN KEY (IdSender) REFERENCES Users(Id),
 	CONSTRAINT FK_Messages_To_Recipients FOREIGN KEY (IdRecipient) REFERENCES Users(Id),
 )
+
+GO
+CREATE NONCLUSTERED INDEX Message_Date_Index
+ON Messages (DateAndTime DESC)
+INCLUDE (TextMessage, IdSender, IdRecipient)

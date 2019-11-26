@@ -6,11 +6,3 @@ C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Exceptions\ob
 C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Exceptions\obj\Debug\netcoreapp3.0\Chat.Exceptions.AssemblyInfo.cs
 C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Exceptions\obj\Debug\netcoreapp3.0\Chat.Exceptions.dll
 C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Exceptions\obj\Debug\netcoreapp3.0\Chat.Exceptions.pdb
-C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Exceptions\bin\Debug\netcoreapp3.0\Chat.Exceptions.deps.json
-C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Exceptions\bin\Debug\netcoreapp3.0\Chat.Exceptions.dll
-C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Exceptions\bin\Debug\netcoreapp3.0\Chat.Exceptions.pdb
-C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Exceptions\obj\Debug\netcoreapp3.0\Chat.Exceptions.csprojAssemblyReference.cache
-C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Exceptions\obj\Debug\netcoreapp3.0\Chat.Exceptions.AssemblyInfoInputs.cache
-C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Exceptions\obj\Debug\netcoreapp3.0\Chat.Exceptions.AssemblyInfo.cs
-C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Exceptions\obj\Debug\netcoreapp3.0\Chat.Exceptions.dll
-C:\Users\Dmytro_Kirieiev\Videos\SimpleMessanger\Chat\Chat.Exceptions\obj\Debug\netcoreapp3.0\Chat.Exceptions.pdb

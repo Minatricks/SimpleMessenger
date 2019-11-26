@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Chat.Contacts\Chat.Contacts.csproj" />
     <ProjectReference Include="..\Chat.Db\Chat.Db.csproj" />
     <ProjectReference Include="..\Chat.Exceptions\Chat.Exceptions.csproj" />
     <ProjectReference Include="..\Chat.Message\Chat.Message.csproj" />

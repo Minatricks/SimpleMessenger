@@ -6,6 +6,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Chat.User;
 using Chat.Message;
+using Chat.Contacts;
+using Chat.Api.Middlewares;
 
 namespace Chat
 {
@@ -25,6 +27,7 @@ namespace Chat
             services.AddCors();
             services.AddChatDb(Configuration);
             services.AddMessageService();
+            services.AddContactService();
             services.AddUserService();
             services.AddAuthenticationService(Configuration);
             services.AddControllers();
@@ -46,6 +49,7 @@ namespace Chat
                     .AllowCredentials();
             });
 
+            app.UseMiddleware<ExceptionMiddleware>();
             app.AddMessageHub();
             app.UseRouting();
             app.UseAuthentication();

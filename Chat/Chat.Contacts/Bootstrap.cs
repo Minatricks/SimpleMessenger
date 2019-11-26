@@ -1,8 +1,12 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
 
 namespace Chat.Contacts
 {
-    public class Bootstrap
+    public static class Bootstrap
     {
+        public static IServiceCollection AddContactService(this IServiceCollection services)
+        {
+            return services.AddScoped<IContactService, ContactService>();
+        }
     }
 }

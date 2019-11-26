@@ -21,10 +21,6 @@ namespace Chat.Db.Configuration
                 .WithOne(x => x.User)
                 .HasForeignKey<UsersProfile>(x => x.Id);
 
-            builder
-                .HasMany(x => x.Contacts)
-                .WithOne(x => x.User)
-                .HasForeignKey(x => x.UserId);
         }
     }
 }

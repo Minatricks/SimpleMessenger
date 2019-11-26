@@ -1,0 +1,15 @@
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\bin\Debug\netcoreapp3.0\Chat.Contacts.deps.json
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\bin\Debug\netcoreapp3.0\Chat.Contacts.dll
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\bin\Debug\netcoreapp3.0\Chat.Contacts.pdb
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\bin\Debug\netcoreapp3.0\Chat.Db.dll
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\bin\Debug\netcoreapp3.0\Chat.Db.Model.dll
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\bin\Debug\netcoreapp3.0\Chat.Exceptions.dll
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\bin\Debug\netcoreapp3.0\Chat.Db.Model.pdb
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\bin\Debug\netcoreapp3.0\Chat.Db.pdb
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\bin\Debug\netcoreapp3.0\Chat.Exceptions.pdb
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\obj\Debug\netcoreapp3.0\Chat.Contacts.csprojAssemblyReference.cache
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\obj\Debug\netcoreapp3.0\Chat.Contacts.AssemblyInfoInputs.cache
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\obj\Debug\netcoreapp3.0\Chat.Contacts.AssemblyInfo.cs
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\obj\Debug\netcoreapp3.0\Chat.Contacts.csproj.CopyComplete
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\obj\Debug\netcoreapp3.0\Chat.Contacts.dll
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Contacts\obj\Debug\netcoreapp3.0\Chat.Contacts.pdb

@@ -1,0 +1,13 @@
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\UserService\bin\Debug\netcoreapp3.0\Chat.User.deps.json
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\UserService\bin\Debug\netcoreapp3.0\Chat.User.dll
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\UserService\bin\Debug\netcoreapp3.0\Chat.User.pdb
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\UserService\bin\Debug\netcoreapp3.0\Chat.Db.dll
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\UserService\bin\Debug\netcoreapp3.0\Chat.Exceptions.dll
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\UserService\bin\Debug\netcoreapp3.0\Chat.Db.pdb
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\UserService\bin\Debug\netcoreapp3.0\Chat.Exceptions.pdb
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\UserService\obj\Debug\netcoreapp3.0\Chat.User.csprojAssemblyReference.cache
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\UserService\obj\Debug\netcoreapp3.0\Chat.User.AssemblyInfoInputs.cache
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\UserService\obj\Debug\netcoreapp3.0\Chat.User.AssemblyInfo.cs
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\UserService\obj\Debug\netcoreapp3.0\Chat.User.csproj.CopyComplete
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\UserService\obj\Debug\netcoreapp3.0\Chat.User.dll
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\UserService\obj\Debug\netcoreapp3.0\Chat.User.pdb

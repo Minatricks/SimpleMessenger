@@ -5,13 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Chat.Db.Model\Chat.Db.Model.csproj" />
-    <ProjectReference Include="..\Chat.Db\Chat.Db.csproj" />
-    <ProjectReference Include="..\Chat.Exceptions\Chat.Exceptions.csproj" />
+    <Compile Remove="Interfaces\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <None Remove="Interfaces\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <ProjectReference Include="..\Chat.Db.Model\Chat.Db.Model.csproj" />
+    <ProjectReference Include="..\Chat.Db\Chat.Db.csproj" />
+    <ProjectReference Include="..\Chat.Exceptions\Chat.Exceptions.csproj" />
   </ItemGroup>
 
 </Project>

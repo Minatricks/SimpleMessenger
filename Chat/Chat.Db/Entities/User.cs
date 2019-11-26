@@ -17,7 +17,9 @@ namespace Chat.Db.Entities
 
         public UsersProfile Profile { get; set; }
 
-        public ICollection<Contact> Contacts { get; set; }
+        public ICollection<Contact> MyContacts { get; set; }
+
+        public ICollection<Contact> IinFriendContacts { get; set; }
 
         public ICollection<Message> SendMessages { get; set; }
 

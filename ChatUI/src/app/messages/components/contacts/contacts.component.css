@@ -1,10 +1,20 @@
-.contacts-container{
-    width: 25vw;
-    height: 100vh;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
-    overflow-x: hidden;
-    background: #006D4F;
+.contacts-container {
+  width: 25vw;
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
+  background: #35D3A7;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: #FF6700;
 }

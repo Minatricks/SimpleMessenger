@@ -1,4 +1,24 @@
-.contact-card{
-    width: auto;
-    margin: 5px;
+.contact-card {
+  width: auto;
+  margin: 3px;
+  border-radius: 0;
+  position: relative;
+}
+
+.profile-img {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.message-short-text {
+  word-wrap: normal;
+}
+
+.contact-name {
+  margin-top: 5px;
+}
+
+.last-update-footer {
+  position: absolute;
+  bottom: 0;
 }

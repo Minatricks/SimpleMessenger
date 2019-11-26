@@ -2,11 +2,16 @@
 {
     public class Contact
     {
-        public int Id { get; set; }
-
-        public int UserId { get; set; }
+        public string Id { get; set; }
 
 
-        public User User { get; set; }
+        public int MyId { get; set; }
+
+        public User MyUser { get; set; }
+
+
+        public int FriendId { get; set; }
+
+        public User FriendUser { get; set; }
     }
 }

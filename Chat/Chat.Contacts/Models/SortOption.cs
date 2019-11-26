@@ -2,6 +2,7 @@
 {
     public enum SortOption
     {
+        None,
         SortById,
         SortByLastMessage,
         SortByName

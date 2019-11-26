@@ -1,0 +1,8 @@
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Db.Model\bin\Debug\netcoreapp3.0\Chat.Db.Model.deps.json
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Db.Model\bin\Debug\netcoreapp3.0\Chat.Db.Model.dll
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Db.Model\bin\Debug\netcoreapp3.0\Chat.Db.Model.pdb
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Db.Model\obj\Debug\netcoreapp3.0\Chat.Db.Model.csprojAssemblyReference.cache
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Db.Model\obj\Debug\netcoreapp3.0\Chat.Db.Model.AssemblyInfoInputs.cache
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Db.Model\obj\Debug\netcoreapp3.0\Chat.Db.Model.AssemblyInfo.cs
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Db.Model\obj\Debug\netcoreapp3.0\Chat.Db.Model.dll
+C:\Users\Dima\Documents\Programming\Chat\SimpleMessanger\Chat\Chat.Db.Model\obj\Debug\netcoreapp3.0\Chat.Db.Model.pdb

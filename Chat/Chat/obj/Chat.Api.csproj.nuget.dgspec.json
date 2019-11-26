@@ -1,0 +1,504 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat\\Chat.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Contacts\\Chat.Contacts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Contacts\\Chat.Contacts.csproj",
+        "projectName": "Chat.Contacts",
+        "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Contacts\\Chat.Contacts.csproj",
+        "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Contacts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj"
+              },
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj"
+              },
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj",
+        "projectName": "Chat.Db.Model",
+        "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\Chat.Db.Model.csproj",
+        "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj",
+        "projectName": "Chat.Db",
+        "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj",
+        "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj",
+        "projectName": "Chat.Exceptions",
+        "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj",
+        "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Message\\Chat.Message.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Message\\Chat.Message.csproj",
+        "projectName": "Chat.Message",
+        "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Message\\Chat.Message.csproj",
+        "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Message\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Core": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat\\Chat.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat\\Chat.Api.csproj",
+        "projectName": "Chat.Api",
+        "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat\\Chat.Api.csproj",
+        "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Contacts\\Chat.Contacts.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Contacts\\Chat.Contacts.csproj"
+              },
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj"
+              },
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj"
+              },
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Message\\Chat.Message.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Message\\Chat.Message.csproj"
+              },
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\UserService\\Chat.User.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\UserService\\Chat.User.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\UserService\\Chat.User.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\UserService\\Chat.User.csproj",
+        "projectName": "Chat.User",
+        "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\UserService\\Chat.User.csproj",
+        "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\UserService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Db\\Chat.Db.csproj"
+              },
+              "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj": {
+                "projectPath": "C:\\Users\\Dima\\Documents\\Programming\\Chat\\SimpleMessanger\\Chat\\Chat.Exceptions\\Chat.Exceptions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

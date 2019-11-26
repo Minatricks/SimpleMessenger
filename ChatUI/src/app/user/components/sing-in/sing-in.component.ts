@@ -5,6 +5,7 @@ import { LoginModel } from '../../models/login-model';
 import { UserModel } from '../../models/user-model';
 import { HttpErrorResponse } from '@angular/common/http';
 import { UserRightsConstant } from 'src/app/shared/models/user-rights-constant';
+import { CookieService } from 'src/app/shared/sevices/cookie.service';
 
 @Component({
   selector: 'app-sing-in',
@@ -13,53 +14,34 @@ import { UserRightsConstant } from 'src/app/shared/models/user-rights-constant';
 })
 export class SingInComponent implements OnInit {
 
-  constructor(private router: Router, private userService: UserService) {
+  constructor(
+    private router: Router,
+    private userService: UserService,
+    private cookieService: CookieService) {
 
   }
+
   ngOnInit() {
   }
 
   logIn(loginModel: LoginModel) {
     this.userService.logIn(loginModel).subscribe(
-      (data: UserModel) => { this.getUser(data) },
-      (error: HttpErrorResponse) => { this.handlerError(error) });
+      (data: UserModel) => { this.getUser(data); },
+      (error: HttpErrorResponse) => { this.handlerError(error); });
   }
 
   private getUser(user: UserModel) {
-    this.setCookie(UserRightsConstant.token, user.token, { 'max-age': 3600 });
-    this.setCookie(UserRightsConstant.role, user.role, { 'max-age': 3600 });
-    alert(this.getCookie(UserRightsConstant.role) + "-" + this.getCookie(UserRightsConstant.token));
+    this.cookieService.setCookie(UserRightsConstant.token, user.token, { 'max-age': 3600 });
+    this.cookieService.setCookie(UserRightsConstant.role, user.role, { 'max-age': 3600 });
+    this.router.navigate(['/message']);
   }
 
   private handlerError(error: HttpErrorResponse) {
-    alert(error.statusText);
-  }
-
-  getCookie(name) {
-    let matches = document.cookie.match(new RegExp(
-      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-    ));
-    return  decodeURIComponent(matches[1]);
-  }
-
-  setCookie(name: string, value: string, options): void {
-    options = { path: '/' };
-
-    let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
-
-    for (let optionKey in options) {
-      updatedCookie += "; " + optionKey;
-      let optionValue = options[optionKey];
-      if (optionValue !== true) {
-        updatedCookie += "=" + optionValue;
-      }
+    if (error.error === undefined) {
+      alert(error.statusText);
+    } else {
+      alert(`${error.error.error} with login ${error.error.parameters[0]}`);
     }
-
-    document.cookie = updatedCookie;
-  }
-
-  deleteCookie(name: string): void {
-    this.setCookie(name, "", { 'max-age': -1 });
   }
 
 }

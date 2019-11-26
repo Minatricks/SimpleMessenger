@@ -2,12 +2,10 @@ import { Injectable } from '@angular/core';
 import { HttpHeaders, HttpParams, HttpClient } from '@angular/common/http';
 import { LoginModel } from '../models/login-model';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class UserService {
   private readonly userControllerUrl = 'http://localhost:5000/user';
-  private readonly securityHeader = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded')
+  private readonly securityHeader = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
 
   constructor(private httpClient: HttpClient) {
   }
@@ -33,5 +31,4 @@ export class UserService {
       .set('username', loginModel.username)
       .set('password', loginModel.password);
   }
-
 }

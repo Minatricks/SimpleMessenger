@@ -1,19 +1,36 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SingUpComponent } from './user/components/sing-up/sing-up.component';
 import { SingInComponent } from './user/components/sing-in/sing-in.component';
 import { AppComponent } from './app.component';
+import { MessageViewComponent } from './messages/components/message-view/message-view.component';
+import { MenuComponent } from './user/components/menu/menu.component';
+import { SingUpComponent } from './user/components/sing-up/sing-up.component';
+
+const childLoginMenuRoutes: Routes = [
+  {
+    path: 'sign-in', component: SingInComponent
+  },
+  {
+    path: 'sign-up', component: SingUpComponent
+  }
+];
 
 const routes: Routes = [
-  { path: " ", component: AppComponent},
-  { path: "sign-up", component: SingUpComponent},
-  { path: "sign-in", component: SingInComponent},
+  {
+    path: 'login', component: MenuComponent, children: childLoginMenuRoutes,
+  },
+  {
+    path: 'message', component: MessageViewComponent
+  },
+  {
+    path: '**', redirectTo: '/login'
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { 
-  
+export class AppRoutingModule {
+
 }

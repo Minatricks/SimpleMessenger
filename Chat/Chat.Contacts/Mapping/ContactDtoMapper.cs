@@ -8,12 +8,11 @@ namespace Chat.Contacts.Mapping
 {
     public static class ContactDtoMapper
     {
-        public static ContactDto ToContactDto(this Contact entity)
+        public static MyContacstDto ToContactDto(this Contact entity)
         {
-            return new ContactDto()
+            return new MyContacstDto()
             {
-                Id = entity.Id,
-                UserId = entity.UserId
+                FriendId = entity.FriendId
             };
         }
     }

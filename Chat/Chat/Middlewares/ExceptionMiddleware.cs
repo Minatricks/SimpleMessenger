@@ -30,7 +30,7 @@ namespace Chat.Api.Middlewares
             catch (IncorrectParametersException ex)
             {
                 await HandleExceptionAsync(context, ex, HttpStatusCode.BadRequest,
-                    new { error = ex.Message, ex.Parameters });
+                    new { error = ex.Message, parameters = ex.Parameters });
             }
             catch (Exception ex)
             {

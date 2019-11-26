@@ -2,7 +2,7 @@
 
 namespace Chat.Contacts.Models
 {
-    public class ContactPaginationResponse : PaginationResponseBase<ContactDto>
+    public class ContactPaginationResponse : PaginationResponseBase<MyContacstDto>
     {
 
     }
