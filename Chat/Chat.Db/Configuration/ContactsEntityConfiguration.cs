@@ -18,6 +18,10 @@ namespace Chat.Db.Configuration
               .IsRequired();
 
             builder
+                .Property(x => x.Id)
+                .ValueGeneratedOnAdd();
+
+            builder
                 .Property(x => x.MyId)
                 .HasColumnName("MyId");
 

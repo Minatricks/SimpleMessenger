@@ -1,5 +1,4 @@
-<app-message-model></app-message-model>
-<app-message-model></app-message-model>
-<app-message-model></app-message-model>
-<app-message-model></app-message-model>
-<app-message-model></app-message-model>
+<app-message-model 
+    *ngFor="let message of messages" 
+    [message]="message">
+</app-message-model>

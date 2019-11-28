@@ -9,5 +9,7 @@ namespace Chat.Message.Interfaces
         Task<int> SendMessage(MessageDto message);
 
         Task<List<MessageDto>> GetMessages(int recepientId);
+
+        Task<List<MessageDto>> GetMessages(int recipientId, int senderId);
     }
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Message } from '../../models/message';
 
 @Component({
   selector: 'app-message-model',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./message-model.component.css']
 })
 export class MessageModelComponent implements OnInit {
+  @Input()
+  message: Message;
 
   constructor() { }
 

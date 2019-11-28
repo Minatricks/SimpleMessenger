@@ -1,4 +1,6 @@
-export enum UserRightsConstant {
+export enum CoockieConstants {
     token = 'token',
-    role = 'role'
+    role = 'role',
+    id = 'id',
+    currentContactId = 'contact'
 }

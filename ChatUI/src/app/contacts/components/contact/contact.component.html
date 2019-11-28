@@ -1,4 +1,4 @@
-<div class="card contact-card">
+<div class="card contact-card" (click)="onCardClick()">
   <div class="row no-gutters">
     <div class="col-4">
       <img class="card-img profile-img"
@@ -9,7 +9,7 @@
         <i class="far fa-address-card"></i>
         Card title
       </h5>
-      <div class="message-short-text">This is a wider text and big text and very big text</div>
+      <div class="message-short-text">{{contact.friendId}}</div>
       <div class="last-update-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
     </div>
   </div>

@@ -31,5 +31,14 @@ namespace Chat.Message
                 .Select(x => x.ToMessageResponse())
                 .ToListAsync();
         }
+
+        public async Task<List<MessageDto>> GetMessages(int recipientId, int senderId)
+        {
+            return await _chatDbContext.Messages
+                .Where(x => x.IdRecipient == recipientId)
+                .Where(x => x.IdSender == senderId)
+                .Select(x => x.ToMessageResponse())
+                .ToListAsync();
+        }
     }
 }

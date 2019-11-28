@@ -14,7 +14,7 @@ namespace Chat.Api.Controllers
         {
             _contactService = contactService;
         }
-
+          
         [HttpGet]
         public async Task<IActionResult> Get(ContactPaginationRequest request)
         {

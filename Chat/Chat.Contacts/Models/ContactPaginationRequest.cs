@@ -5,7 +5,5 @@ namespace Chat.Contacts.Models
     public class ContactPaginationRequest : PaginationRequestBase
     {
         public int UserId { get; set; }
-
-        public SortOption SortOption { get; set; }
     }
 }

@@ -25,9 +25,15 @@ namespace Chat.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]MessageDto message)
         {
-            message.DateTime = DateTime.Now;
             await _messageService.SendMessage(message);
             await _hubContext.Clients.All.SendAsync("notify", message);
+            return Ok();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Get(int recipientId, int senderId)
+        {
+            await _messageService.GetMessages(recipientId, senderId);
             return Ok();
         }
     }

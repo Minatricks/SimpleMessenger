@@ -5,7 +5,7 @@ export class CookieService {
 
   constructor() { }
 
-  getCookie(name) {
+  getCookie(name): string {
     const matches = document.cookie.match(new RegExp(
       '(?:^|; )' + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'
     ));

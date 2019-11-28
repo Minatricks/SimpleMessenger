@@ -22,18 +22,16 @@ namespace Chat.Contacts
         {
             var contactListQuery = _chatDbContext.Contacts.Where(x => x.MyId == request.UserId).AsQueryable();
 
-            var totalCount =  contactListQuery.CountAsync();
-            var contactList =  contactListQuery.Select(x => x.ToContactDto())
+            var totalCount = await contactListQuery.CountAsync();
+            var contactList = await contactListQuery.Select(x => x.ToContactDto())
                 .Skip(request.Skip)
                 .Take(request.Take)
                 .ToListAsync();
 
-            await Task.WhenAll(totalCount, contactList);
-
             return new ContactPaginationResponse()
             {
-                Data = await contactList,
-                TotalCount = await totalCount
+                Data =  contactList,
+                TotalCount =  totalCount
             };
         }
     }

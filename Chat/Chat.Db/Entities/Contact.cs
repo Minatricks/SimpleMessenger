@@ -1,8 +1,10 @@
-﻿namespace Chat.Db.Entities
+﻿using System;
+
+namespace Chat.Db.Entities
 {
     public class Contact
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
 
 
         public int MyId { get; set; }

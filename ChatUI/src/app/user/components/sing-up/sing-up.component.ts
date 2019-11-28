@@ -5,7 +5,7 @@ import { CookieService } from 'src/app/shared/sevices/cookie.service';
 import { LoginModel } from '../../models/login-model';
 import { UserModel } from '../../models/user-model';
 import { HttpErrorResponse } from '@angular/common/http';
-import { UserRightsConstant } from 'src/app/shared/models/user-rights-constant';
+import { CoockieConstants } from 'src/app/shared/models/user-rights-constant';
 
 
 @Component({
@@ -32,8 +32,9 @@ export class SingUpComponent implements OnInit {
   }
 
   private getUser(user: UserModel) {
-    this.cookieService.setCookie(UserRightsConstant.token, user.token, { 'max-age': 3600 });
-    this.cookieService.setCookie(UserRightsConstant.role, user.role, { 'max-age': 3600 });
+    this.cookieService.setCookie(CoockieConstants.token, user.token, { 'max-age': 3600 });
+    this.cookieService.setCookie(CoockieConstants.role, user.role, { 'max-age': 3600 });
+    this.cookieService.setCookie(CoockieConstants.id, user.id.toString(), { 'max-age': 3600 });
     this.router.navigate(["/message"]);
   }
 
