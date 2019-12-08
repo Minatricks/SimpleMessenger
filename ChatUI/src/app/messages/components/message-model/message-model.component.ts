@@ -11,13 +11,13 @@ import { CoockieConstants } from 'src/app/shared/models/user-rights-constant';
 export class MessageModelComponent implements OnInit {
   @Input()
   message: Message;
-  IsMarginLeft: boolean;
+  IsMyMessage: boolean;
 
   constructor(private coockieService: CookieService) { }
 
   ngOnInit() {
-    let currentUserId = Number(this.coockieService.getCookie(CoockieConstants.id));
-    this.IsMarginLeft = currentUserId === this.message.idSender;
+    const currentUserId = Number(this.coockieService.getCookie(CoockieConstants.id));
+    this.IsMyMessage = currentUserId === this.message.idSender;
   }
 
 }

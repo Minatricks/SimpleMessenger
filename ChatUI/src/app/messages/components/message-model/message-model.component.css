@@ -1,0 +1,16 @@
+.message-style {
+  max-width: 35%;
+  min-width: 10%;
+  padding: 5px;
+  background: #FF6700;
+  float: left;
+  margin-top: 1px;
+  margin-left: 10px;
+}
+
+.my-message {
+    float: right;
+    background: #35D3A7;
+    margin-left: 0;
+    margin-right: 10px;
+}

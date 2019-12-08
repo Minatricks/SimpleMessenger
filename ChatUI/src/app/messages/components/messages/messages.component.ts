@@ -13,7 +13,8 @@ export class MessagesComponent implements OnInit, OnDestroy {
   messages: Array<Message>;
   private sub: Subscription;
 
-  constructor(private messageService: MessageService,
+  constructor(
+    private messageService: MessageService,
     private messageUpdateService: MessageUpdateService) { }
 
   ngOnInit() {

@@ -11,8 +11,13 @@ export class MessageService {
   private connectionUrlForHub = 'http://localhost:5000/messages';
   private connectionUrlForController = 'http://localhost:5000/message';
   private hubConnection: HubConnection;
+  private readonly autorizationHeader = new HttpHeaders({
+    'Authorization': 'Bearer ' + this.coockieService.getCookie(CoockieConstants.token)
+  });
 
-  constructor(private http: HttpClient,
+
+  constructor(
+    private http: HttpClient,
     private coockieService: CookieService,
     private messageUpdateService: MessageUpdateService) {
 
@@ -27,19 +32,19 @@ export class MessageService {
   }
 
   sendMessage(message: Message) {
-    return this.http.post(this.connectionUrlForController, message);
+    return this.http.post(this.connectionUrlForController, message, { headers: this.autorizationHeader });
   }
 
-  getLastMessage(recipientId: Number, senderId: Number) {
+  getLastMessage(recipientId: number, senderId: number) {
     return this.http.get(`${this.connectionUrlForController}/last/?recipientId=${recipientId}
-    &senderId=${senderId}`);
+    &senderId=${senderId}`, { headers: this.autorizationHeader });
   }
 
   getMessages() {
     const recipientId = Number(this.coockieService.getCookie(CoockieConstants.id));
     const senderId = Number(this.coockieService.getCookie(CoockieConstants.currentContactId));
     return this.http.get(`${this.connectionUrlForController}/?recipientId=${recipientId}
-    &senderId=${senderId}`);
+    &senderId=${senderId}`, { headers: this.autorizationHeader });
   }
 
   private configureHubConnection() {

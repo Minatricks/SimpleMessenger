@@ -19,7 +19,8 @@ export class ContactComponent implements OnInit {
   @Output()
   setActive: EventEmitter<number> = new EventEmitter<number>();
 
-  constructor(private coockieService: CookieService,
+  constructor(
+    private coockieService: CookieService,
     private messageService: MessageService,
     private messageUpdateService: MessageUpdateService) { }
 

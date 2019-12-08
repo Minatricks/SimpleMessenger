@@ -13,9 +13,10 @@ import { MessageUpdateService } from 'src/app/shared/sevices/message-update.serv
   styleUrls: ['./message.component.css']
 })
 export class MessageComponent {
-  constructor(private coockieService: CookieService,
-     private messageService: MessageService,
-     private messageUpdateService: MessageUpdateService) { }
+  constructor(
+    private coockieService: CookieService,
+    private messageService: MessageService,
+    private messageUpdateService: MessageUpdateService) { }
 
   sendMessage(messageText: string): void {
     const message = this.createMessage(messageText);
@@ -24,6 +25,7 @@ export class MessageComponent {
         this.messageUpdateService.pushUpdateMessage(true);
       }
     );
+    this.clearInput();
   }
 
   private createMessage(text: string): Message {
@@ -37,7 +39,10 @@ export class MessageComponent {
     message.idSender = Number(this.coockieService.getCookie(CoockieConstants.id));
     message.idRecipient = Number(this.coockieService.getCookie(CoockieConstants.currentContactId));
     message.dateTime = new Date();
-
     return message;
+  }
+
+  private clearInput() {
+    (<HTMLInputElement>document.getElementById('text-area')).value = '';
   }
 }

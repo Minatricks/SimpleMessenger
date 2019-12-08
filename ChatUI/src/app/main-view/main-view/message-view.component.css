@@ -5,16 +5,28 @@
 .messages-container-area {
   position: fixed;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 75vw;
+  overflow-y: auto;
 }
 
-.message-area {
+.sending-form-area {
   position: fixed;
   right: 0;
   bottom: 0;
   width: 75vw;
 }
 
-.container-big {
-    height: 90vh;
-    width: 75vw;
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 2px;
 }
+
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: #FF6700;
+}
+

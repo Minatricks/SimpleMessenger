@@ -16,5 +16,4 @@ export class ContactService {
     const myId = this.coockieService.getCookie(CoockieConstants.id);
     return this.httpClient.get(`${this.userControllerUrl}?userId=${myId}&skip=0&take=1000`);
   }
-  
 }

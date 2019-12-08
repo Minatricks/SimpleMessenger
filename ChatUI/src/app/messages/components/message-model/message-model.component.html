@@ -1,4 +1,4 @@
-<div class="card" [style.margin-left]="IsMarginLeft ? '50px' : '0px'">
+<div class="message-style card" [class.my-message]="IsMyMessage">
   <div>{{message.textMessage}}</div>
-  <small>{{message.dateTime}}</small>
+  <small>{{message.dateTime | date:"hh:mm:ss"}}</small>
 </div>

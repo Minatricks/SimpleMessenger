@@ -1,3 +1,4 @@
+
 export class Message {
     id: string;
     textMessage: string;

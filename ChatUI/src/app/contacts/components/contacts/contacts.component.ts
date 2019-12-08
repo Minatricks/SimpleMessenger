@@ -41,7 +41,7 @@ export class ContactsComponent implements OnInit, OnDestroy {
     this.contactService.getMyContacts().subscribe(
       (response: Array<UserModel>) => {
         response.forEach(userModel => {
-          let contact = new ContactModel();
+          const contact = new ContactModel();
           contact.id = userModel.id;
           contact.userName = userModel.username;
           this.contacts.push(contact);
@@ -53,7 +53,7 @@ export class ContactsComponent implements OnInit, OnDestroy {
   }
 
   private getLastMessage() {
-    var currentUserId = Number(this.coockieService.getCookie(CoockieConstants.id));
+    const currentUserId = Number(this.coockieService.getCookie(CoockieConstants.id));
     this.contacts.forEach(contact => {
       this.messageService.getLastMessage(currentUserId, contact.id).subscribe(
         (data: Message) => (contact.lastMessage = data));
