@@ -27,14 +27,21 @@ namespace Chat.Api.Controllers
         {
             await _messageService.SendMessage(message);
             await _hubContext.Clients.All.SendAsync("notify", message);
-            return Ok();
+            return Ok(message);
         }
 
         [HttpGet]
         public async Task<IActionResult> Get(int recipientId, int senderId)
         {
-            await _messageService.GetMessages(recipientId, senderId);
-            return Ok();
+            var messages = await _messageService.GetMessages(recipientId, senderId);
+            return Ok(messages);
+        }
+
+        [HttpGet("last")]
+        public async Task<IActionResult> GetLast(int recipientId, int senderId)
+        {
+            var message = await _messageService.GetLastMessage(recipientId, senderId);
+           return Ok(message);
         }
     }
 }

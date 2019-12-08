@@ -1,16 +1,20 @@
-<div class="card contact-card" (click)="onCardClick()">
-  <div class="row no-gutters">
+<div class="card contact-card" [class.active-contact]="contact.isActiveContact" (click)="onCardClick()">
+  <div class="row no-gutters small-screen">
+    <div class="col-12">
+      <img class="card-img profile-img" src="https://img.huffingtonpost.com/asset/5dcc613f1f00009304dee539.jpeg">
+    </div>
+  </div>
+  <div class="row no-gutters big-screen">
     <div class="col-4">
-      <img class="card-img profile-img"
-        src="https://pm1.narvii.com/5866/76b201e12343e860570c62f4067307e04ed545fe_hq.jpg">
+      <img class="card-img profile-img" src="https://img.huffingtonpost.com/asset/5dcc613f1f00009304dee539.jpeg">
     </div>
     <div class="col-8">
       <h5 class="contact-name">
         <i class="far fa-address-card"></i>
-        Card title
+        {{contact.userName}}
       </h5>
-      <div class="message-short-text">{{contact.friendId}}</div>
-      <div class="last-update-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+      <div class="message-short-text">{{contact.lastMessage.textMessage}}</div>
+      <div><small class="text-muted">{{contact.lastMessage.dateTime}}</small></div>
     </div>
   </div>
 </div>

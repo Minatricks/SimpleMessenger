@@ -8,14 +8,12 @@ namespace Chat.Db.Configuration
     {
         public void Configure(EntityTypeBuilder<Message> builder)
         {
-            builder
-                .ToTable("dbo","Messages")
-                .HasKey(x => x.Id);
+            builder.ToTable("Messages", "dbo").HasKey(x => x.Id);
 
             builder
-                .Property(x => x.Id)
-                .ValueGeneratedOnAdd();
-                
+               .Property(x => x.Id)
+               .ValueGeneratedOnAdd();
+
             builder
                 .HasOne(x => x.SenderUser)
                 .WithMany(x => x.SendMessages)

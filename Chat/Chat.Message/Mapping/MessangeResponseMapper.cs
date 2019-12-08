@@ -9,7 +9,7 @@ namespace Chat.Message.Mapping
         {
             return new MessageDto()
             {
-                Id = entity.Id,
+                Id = entity.Id.ToString(),
                 TextMessage = entity.TextMessage,
                 IdRecipient = entity.IdRecipient,
                 IdSender = entity.IdSender,

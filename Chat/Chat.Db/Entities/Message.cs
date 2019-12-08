@@ -4,7 +4,7 @@ namespace Chat.Db.Entities
 {
     public class Message
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
 
         public string TextMessage { get; set; }
 

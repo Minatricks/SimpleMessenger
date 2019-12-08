@@ -1,5 +1,6 @@
 .contact-card {
   width: auto;
+  min-height: 80px;
   margin: 3px;
   border-radius: 0;
   position: relative;
@@ -14,11 +15,29 @@
   word-wrap: normal;
 }
 
-.contact-name {
-  margin-top: 5px;
+.active-contact {
+  background: red;
 }
 
-.last-update-footer {
-  position: absolute;
-  bottom: 0;
+.contact-name {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.small-screen {
+  display: none;
+}
+
+.big-screen {
+  display: flex;
+}
+
+@media (max-width:850px) {
+  .small-screen {
+    display: block;
+  }
+
+  .big-screen {
+    display: none;
+  }
 }

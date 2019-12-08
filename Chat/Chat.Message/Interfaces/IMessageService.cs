@@ -11,5 +11,7 @@ namespace Chat.Message.Interfaces
         Task<List<MessageDto>> GetMessages(int recepientId);
 
         Task<List<MessageDto>> GetMessages(int recipientId, int senderId);
+
+        Task<MessageDto> GetLastMessage(int recipientId, int senderId);
     }
 }

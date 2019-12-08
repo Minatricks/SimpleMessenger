@@ -12,7 +12,6 @@ import { ContactComponent } from './contacts/components/contact/contact.componen
 import { MessageViewComponent } from './main-view/main-view/message-view.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './user/components/menu/menu.component';
-import { ContactActiveDirective } from './contacts/directives/contact-active.directive';
 import { MessagesComponent } from './messages/components/messages/messages.component';
 import { MessageModelComponent } from './messages/components/message-model/message-model.component';
 import { UserService } from './user/services/user.service';
@@ -30,7 +29,6 @@ import { MessageService } from './messages/services/message.service';
     ContactComponent,
     MessageViewComponent,
     MenuComponent,
-    ContactActiveDirective,
     MessagesComponent,
     MessageModelComponent,
   ],

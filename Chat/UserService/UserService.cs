@@ -24,13 +24,19 @@ namespace Chat.User
 
         public async Task<UserResponse> Get(string username, string password)
         {
-            var user = await FindUser(x => x.Username == username && x.Password == password, parameters: username);
+            var user = await FindUser(x => x.Username == username && x.Password == password, errorParameters: username);
+            return user.ToUserResponse();
+        }
+
+        public async Task<UserResponse> Get(int UserId)
+        {
+            var user = await FindUser(x => x.Id == UserId , errorParameters: UserId);
             return user.ToUserResponse();
         }
 
         public async Task<int> UpdateUserToken(int userId, string token)
         {
-            var user = await FindUser(x => x.Id == userId, parameters: userId);
+            var user = await FindUser(x => x.Id == userId, errorParameters: userId);
 
             user.Token = token;
             _chatDbContext.Entry(user).State = EntityState.Modified;
@@ -70,12 +76,13 @@ namespace Chat.User
         private async Task<Db.Entities.User> FindUser(
             Expression<Func<Db.Entities.User, bool>> expression,
             string exceptionMessage = "User not found",
-            object parameters = null)
+            object errorParameters = null)
         {
             var user = await _chatDbContext.Users.FirstOrDefaultAsync(expression);
+
             if (user == null)
             {
-                throw new IncorrectParametersException(exceptionMessage, parameters);
+                throw new IncorrectParametersException(exceptionMessage, errorParameters);
             }
 
             return user;

@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Message } from '../../models/message';
+import { CookieService } from 'src/app/shared/sevices/cookie.service';
+import { CoockieConstants } from 'src/app/shared/models/user-rights-constant';
 
 @Component({
   selector: 'app-message-model',
@@ -9,10 +11,13 @@ import { Message } from '../../models/message';
 export class MessageModelComponent implements OnInit {
   @Input()
   message: Message;
+  IsMarginLeft: boolean;
 
-  constructor() { }
+  constructor(private coockieService: CookieService) { }
 
   ngOnInit() {
+    let currentUserId = Number(this.coockieService.getCookie(CoockieConstants.id));
+    this.IsMarginLeft = currentUserId === this.message.idSender;
   }
 
 }

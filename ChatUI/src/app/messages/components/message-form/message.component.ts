@@ -5,6 +5,7 @@ import { MessageService } from '../../services/message.service';
 import { UserService } from 'src/app/user/services/user.service';
 import { CookieService } from 'src/app/shared/sevices/cookie.service';
 import { CoockieConstants } from 'src/app/shared/models/user-rights-constant';
+import { MessageUpdateService } from 'src/app/shared/sevices/message-update.service';
 
 @Component({
   selector: 'app-message',
@@ -12,14 +13,15 @@ import { CoockieConstants } from 'src/app/shared/models/user-rights-constant';
   styleUrls: ['./message.component.css']
 })
 export class MessageComponent {
-  constructor(private coockieService: CookieService, private messageService: MessageService) { }
+  constructor(private coockieService: CookieService,
+     private messageService: MessageService,
+     private messageUpdateService: MessageUpdateService) { }
 
   sendMessage(messageText: string): void {
     const message = this.createMessage(messageText);
     this.messageService.sendMessage(message).subscribe(
       (data: any) => {
-        alert(data);
-        this.messageService.addToCache(message);
+        this.messageUpdateService.pushUpdateMessage(true);
       }
     );
   }
@@ -38,24 +40,4 @@ export class MessageComponent {
 
     return message;
   }
-
-
-  /*
-  ngOnInit(): void {
-    this.messageService.onGetMessage(this.alertMessage);
-  }
-
-  sendMessage(message: Message) {
-    message.idSender = Number(this.coockieService.getCookie(UserRightsConstant.id));
-    this.messageService.sendMessage(message).subscribe(
-      (date: any) => {
-        alert(date);
-      }
-    );
-  }
-
-  alertMessage(message: Message) {
-    alert(message.textMessage);
-  }
-*/
 }

@@ -10,6 +10,8 @@ namespace Chat.User.Interfaces
 
         Task<UserResponse> Get(string username, string password);
 
+        Task<UserResponse> Get(int userId);
+
         IEnumerable<UserResponse> GetAll();
 
         Task<int> UpdateUserToken(int userId, string token);
